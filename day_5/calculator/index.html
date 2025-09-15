@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <label for="num1">First Number:</label>
+        <input type="number" name="num1" id="num1" placeholder="First Number" required><br><br>
+
+        <label for="num2">Second Number:</label>
+        <input type="number" name="num2" id="num2" placeholder="Second Number" required><br><br>
+
+        <label for="num3">Third Number:</label>
+        <input type="number" name="num3" id="num3" placeholder="Third Number"><br><br>
+
+        <input type="button" value="Sum" id="sum" onclick="calculateSum(num1.value, num2.value, num3.value)">
+        <input type="button" value="Subtract" id="sub" onclick="calculateDiff(num1.value, num2.value, num3.value)">
+        <input type="button" value="Multiply" id="mul" onclick="calculateProd(num1.value, num2.value, num3.value)">
+        <input type="button" value="Divide" id="div" onclick="calculateQuot(num1.value, num2.value, num3.value)"><br><br>
+
+        <div id="result">
+            Result: <span id="res"></span>
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
