@@ -16,5 +16,3 @@ function fun(value) {
         document.getElementById("bulb").style.backgroundColor = value;
     }
 }
-
-// alert("Alert Message")
